@@ -1,0 +1,25 @@
+sql数据库，查询数据提交表单，开关查询erp内容返回数据表。
+不需要画界面，所有操作命令调用就好。
+主要功能：
+1、商品主要信息加入数据库 商品代号+全称+颜色（或多个）+价格+对应图片
+2、获取实时库存，填入要货或退货信息。验证成功
+3、填入销售、销退信息。验证成功
+4、报表查询下载网站入口：http://221.2.154.4/ERPWEB/Login.aspx 
+	用户名1475 密码无 一般模式，需要识别码验证（自动or提取后手工）
+	网站主控界面：http://221.2.154.4/ERPWEB/Main.aspx从网站入口通过验证，可以提取公司的产品信息。
+	要货界面——加入货品—— 货品与货品信息查询界面可以提取所有产品的编码与属性。里面两个功能分别属于两个网址！
+	按产品要货界面：http://221.2.154.4/ERPWEB/INVYHMng1.aspx 
+	按箱要货申请：http://221.2.154.4/ERPWEB/INVYHBMng.aspx
+	要货状况查询：http://221.2.154.4/ERPWEB/RPTYHStat.aspx
+	要货明细：http://221.2.154.4/ERPWEB/RPTYHList.aspx
+	要货统计表：http://221.2.154.4/ERPWEB/RPTYHStat1.aspx
+	可选择要货界面：（记录库位代号名称）http://221.2.154.4/ERPWEB/QueryWin.aspx?CUS_NO=1475&qwid=WH&returnidobj=ctl00_main_txtWhYhNo&returnnameobj=txtWhYh&runfunction=btnReBinding()&single=T&usr=1475
+	要货添加界面:（货品查询，需要对比数据库所有货品资料，添加新产品）http://221.2.154.4/ERPWEB/INVNewAddPrdt.aspx?key=DRPYH&wh=12E;00&CUS_NO=T475&RefreshID='ctl00$body$btnUserView'&IsFromYhSo=T商品资料采集界面：http://221.2.154.4/ERPWEB/INVYHEdit1.aspx（各分公司产品价格应该是一致的，在这里可以换任何客户编码）可以查货号价格、商品名称、尺码、颜色 的链接
+	商品图片+资料界面：http://221.2.154.4/ERPWEB/INVYDEdit.aspx?PRD_NO=S0511&SHOWPRICE=T&IsShowPrice=T
+	商品图片界面：http://221.2.154.4/ERPWEB/CMPicShow.aspx?PrdNo=S1559&thumbnails='T'&time='96'
+	供货仓库库存：http://221.2.154.4/ERPWEB/INVPrdt1Show.aspx
+	理论上可以查询所有公司库与客户的库存，可以与客户的库存对比！销售明细表只能查询客户自己的表:http://221.2.154.4/ERPWEB/RPTSAList.aspx 
+	产品销售：http://221.2.154.4/ERPWEB/INVSAMng.aspx
+	产品销退：http://221.2.154.4/ERPWEB/INVSBMng.aspx
+	退货申请http://221.2.154.4/ERPWEB/INVYIMng.aspx?fuzzyId=T
+	要货明细表： http://221.2.154.4/ERPWEB/RPTYHList.aspx
